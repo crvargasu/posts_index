@@ -36,3 +36,5 @@
 db/migrate/*
 
 Gemfile.lock
+
+.DS_Store
