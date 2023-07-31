@@ -24,7 +24,7 @@ function Post() {
       key: "key",
       dataIndex: "key",
       render: (_, record) => (
-        <button onClick={() => deleteItem(record)}>{"Eliminar"}</button>
+        <Button onClick={() => deleteItem(record)}>{"Eliminar"}</Button>
       ),
     },
   ];
@@ -52,7 +52,7 @@ function Post() {
   return (
     <Wrapper>
       <SearchDiv>
-        <Form style={{ display: "flex" }} onFinish={searchName}>
+        <Form wrapperCol={{ span: 20 }} style={{ display: "flex" }} onFinish={searchName}>
           <Form.Item name="name">
             <Input placeholder="Filtro de Nombre" />
           </Form.Item>
@@ -65,7 +65,7 @@ function Post() {
       </SearchDiv>
       <Table dataSource={posts} columns={columns} pagination={false} />
       <CreateDiv>
-        <Form style={{ display: "flex" }} onFinish={postData}>
+        <Form wrapperCol={{ span: 20 }} style={{ display: "flex" }} onFinish={postData}>
           <Form.Item name="name">
             <Input placeholder="Nombre" />
           </Form.Item>
@@ -88,16 +88,18 @@ const Wrapper = styled.div`
   margin-left: auto;
   margin-right: auto;
   width: 60%;
+  margin-top: 50px;
 `;
 
 const SearchDiv = styled.div`
   display: flex;
+  justify-content: center;
 `;
 
 const CreateDiv = styled.div`
   margin-top: 10px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 `;
 
 export default Post;
