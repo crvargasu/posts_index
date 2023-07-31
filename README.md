@@ -1,24 +1,19 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## How to run backend
 
-Things you may want to cover:
+`rails db:create`
 
-* Ruby version
+`rails db:migrate`
 
-* System dependencies
+`rails s`
 
-* Configuration
+## How to run frontend
 
-* Database creation
+`cd front`
 
-* Database initialization
+`npm install`
 
-* How to run the test suite
+`npm start`
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Then the app it's gonna run at `localhost:3000`
