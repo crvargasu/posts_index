@@ -2,6 +2,8 @@
 
 ## How to run backend
 
+`bundle install`
+
 `rails db:create`
 
 `rails db:migrate`
